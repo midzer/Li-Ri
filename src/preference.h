@@ -110,8 +110,8 @@ struct sNewPreference
     float EcartWagon { ECARTWAGON_MOY }; // ecart en pixels entre 2 wagons
     int NLangues; // Nombre de langues disponible
     int NiveauMax[3] { 0, 0, 0 }; // One per difficulty
-    int FullScreen { true };
-    int Langue { -1 }; // locale index
+    int FullScreen { false };
+    int Langue { 1 }; // locale index
     float Volume { (float)SDL_MIX_MAXVOLUME }; // audio volume
     float VolumeM { (float)SDL_MIX_MAXVOLUME }; // music volume
     struct sScore Sco[8]; // store scores

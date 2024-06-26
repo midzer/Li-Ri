@@ -110,7 +110,7 @@ int main(int narg, char *argv[])
         vOption |= SDL_WINDOW_FULLSCREEN_DESKTOP;
     }
 
-    sdlWindow = SDL_CreateWindow(Titre, 0, 0, 800, 600, vOption);
+    sdlWindow = SDL_CreateWindow(Titre, 0, 0, 640, 480, vOption);
     sdlRenderer = SDL_CreateRenderer(sdlWindow, -1, 0);
     SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");
     SDL_RenderSetLogicalSize(sdlRenderer, 800, 600);
