@@ -105,7 +105,7 @@ int main(int narg, char *argv[])
     atexit(SDL_Quit);
 
     // Demande la resolution Video
-    int vOption = SDL_WINDOW_RESIZABLE;
+    int vOption = SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI;
     if (Pref.FullScreen) {
         vOption |= SDL_WINDOW_FULLSCREEN_DESKTOP;
     }
