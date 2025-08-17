@@ -33,6 +33,7 @@ endif()
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+set(CMAKE_CXX_FLAGS_RELEASE "-flto -O3 -fno-exceptions -fno-rtti")
 
 option (USE_SYSTEM_SIMPLEINI "Use system SimpleIni instead of FetchContent" OFF)
 if(USE_SYSTEM_SIMPLEINI)
@@ -110,7 +111,7 @@ else()
   install(DIRECTORY ${CMAKE_SOURCE_DIR}/Sounds DESTINATION "${CMAKE_INSTALL_DATADIR}/Li-ri")
 endif()
 option(RILI_ENABLE_IPO
-  "Enable interprocedural optimization (IPO/LTO) by the compiler" ON)
+  "Enable interprocedural optimization (IPO/LTO) by the compiler" OFF)
 if(RILI_ENABLE_IPO)
   include(CheckIPOSupported)
   check_ipo_supported(RESULT ipo_supported)

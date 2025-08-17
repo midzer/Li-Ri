@@ -1,0 +1,15 @@
+[
+    "main",
+    "Utils::LoadFile(char const*, unsigned char*&)",
+    "Sprite::Load(unsigned char*, long&)",
+    "LoadLangue()",
+    "Menu::SDLMain_Score(bool)",
+    "Menu::SDLMain_Options()",
+    "Menu::SDLMain_Language()",
+    "Game::SDLMain()",
+    "SDL_Delay",
+    "SDL_RenderPresent",
+    "GLES2_RenderPresent",
+    "Emscripten_GLES_SwapWindow",
+    "dynCall_v"
+]
